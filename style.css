@@ -272,3 +272,37 @@ footer {
   color: var(--off-white);
 }
 
+/* Character Cards */
+.card_container {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  width:60vh;
+  background-color: var(--primary-color);
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  width: 30%;
+}
+
+.card_img{
+  position:relative;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card_text{
+ display: flex;
+ flex-direction: column;
+}
+
+.card_description{
+  margin:0px 5px 5px 10px;
+  font-size: 1rem;
+
+}
