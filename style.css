@@ -64,12 +64,14 @@ header {
   background-color: var(--primary-color);
   padding: 48px 0;
   border-bottom: var(--secondary-color) 6px solid;
+  
 }
 
 
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+  text-decoration: none;
 }
 
 
@@ -305,4 +307,49 @@ footer {
   margin:0px 5px 5px 10px;
   font-size: 1rem;
 
+}
+
+/* Responsive Breakpoints */
+
+/* Laptop/Desktop Screens */
+@media screen and (min-width: 960px){
+}
+
+/* Tablet Device Screens */
+@media screen and (max-width: 960px){
+}
+
+/* Mobile Device Screens */
+@media screen and (max-width: 460px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+  nav{
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+  }
+  nav > a.logo{
+    text-align: center; 
+    margin-right: unset;
+    margin-bottom: 10px;
+  }
+  nav > a:not(:first-of-type){
+    margin-left: 0;
+  }
+  .container__article{
+    width: 100vw;
+    padding: 0px;
+  }
+  article img {
+    width: 100%;
+  }
+  aside img {
+    width: 100%;
+  }
+  .container__article_img1{
+    width: 100%;
+  }
 }
